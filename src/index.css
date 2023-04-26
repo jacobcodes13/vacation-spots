@@ -11,3 +11,57 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.vacation--spot {
+  display: flex;
+  flex-wrap: nowrap;
+
+  gap: 20px;
+
+  overflow-x: auto;
+}
+
+.vacation--container {
+  width: 175px;
+
+  font-size: 12px;
+
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.vacation--container:hover {
+  opacity: 50%;
+  cursor: pointer
+}
+
+.vacation--img {
+  height: 150px;
+  max-width: 150px;
+
+  object-fit: cover;
+
+  border-radius: 9px;
+  margin-bottom: 9px;
+  margin-left: 15px;
+}
+
+.vacation--info {
+  display: flex;
+  flex-direction: column;
+
+  /* border: 1px solid black; */
+
+  align-items: center;
+}
+
+.vacation--price {
+  display: flex;
+  align-items: center;
+}
+
+.dollar {
+  margin-right: 10px;
+}
